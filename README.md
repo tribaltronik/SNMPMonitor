@@ -6,7 +6,7 @@ Web App that presents information from devices using SNMP Protocol.
 
 ##Instalation and usage
 
-- Install nodejs on or OS;
+- Install nodejs;
 - Install node_modules: npm install;
 - Update on the "devices.json" with the devices;
 - And on "index.js" change the OIDs;

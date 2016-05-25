@@ -1,6 +1,5 @@
 # SNMPMonitor
-Web App show information from devices using SNMP Protocol.
-
+Web App that presents information from devices using SNMP Protocol.
 
 Author: Tiago Ricardo 
 https://www.linkedin.com/in/tiagodricardo

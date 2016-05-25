@@ -17,18 +17,7 @@ var async = require('async');
 // snmp module
 var snmp = require ("net-snmp");
 
-var luminatos = [
-  {
-    "name": "Device 1",
-    "local": "Porto",
-    "ip": "192.168.0.1"
-  },
-  {
-    "name": "Device 2",
-    "local": "Lisboa",
-    "ip": "192.168.0.2"
-  }
-];
+var devices = require('./devices.json');
 
 var result = [];
 
@@ -45,7 +34,7 @@ router.get("/",function(req,res){
 router.get("/devices",function(req,res)
 {
 	result = [];
-	async.forEachOf(luminatos, function (value, key, callback) {
+	async.forEachOf(devices, function (value, key, callback) {
 		ReadDeviceInfo(value,callback);
 	}, function (err) {
 	  if(err)
